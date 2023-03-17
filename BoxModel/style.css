@@ -1,0 +1,16 @@
+body {
+    background: orange;
+}
+.ex {
+    background: lightgray;
+    color: orange;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-top: 40px ;
+    border-bottom: 40px ;
+    border-left: 20px;
+    border-right: 20px;
+    border-color: white;
+    border-style: solid;
+}
