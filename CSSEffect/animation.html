@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            animation: bao 5s;
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+
+        }
+
+        @keyframes bao {
+            0% {
+            }
+
+            25% {
+                transform: translateX(1000px);
+            }
+            50% {
+                transform: translate(1000px, 600px);
+            }
+
+            75% {
+                transform: translate(0px, 600px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <!-- Di chuyển 4 cạnh màn hình-->
+</body>
+
+</html>
