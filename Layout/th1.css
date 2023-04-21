@@ -76,6 +76,7 @@
     margin: 5px;
     border: 1px solid;
     float: left;
+    background: yellow;
 }
 .main_right {
     width: 25%;
@@ -85,6 +86,42 @@
 }
 .footer {
     height: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background: red;
 }
-/* float: 2 div trên 1 hàng => tổng width < 100% */
-/* 100%+1px>100% */
+
+@media only screen and (max-width: 1200px) {
+    .main_left {
+        display: none;
+    }
+    .main_mid {
+        width: calc(100% - 35% - 14px);
+    }
+    .main_right {
+        width: 35%;
+    }
+}  
+@media only screen and (max-width: 1000px) {
+    .main_mid {
+        width: 100%;
+    }
+    .main_right {
+        display: none;
+    }
+}  
+@media only screen and (max-width: 800px) {
+    .item {
+        width: calc(50% - 12px);
+    }
+}  
+
+@media only screen and (max-width: 600px) {
+    .item {
+        width: calc(100% - 12px);
+    }
+    .main{
+        overflow: auto;
+    }
+}  
